@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/ic_nav_calendar"
+        android:title="Calendrier" />
+
+    <item
+        android:id="@+id/nav_info"
+        android:icon="@drawable/ic_nav_info"
+        android:title="Informations" />
+
+    <item
+        android:id="@+id/nav_stats"
+        android:icon="@drawable/ic_nav_stats"
+        android:title="Mes statistiques" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_nav_settings"
+        android:title="Options" />
+
+</menu>
