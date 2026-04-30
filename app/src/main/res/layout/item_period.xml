@@ -2,51 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
     android:orientation="vertical"
-    android:padding="12dp"
-    android:background="?android:attr/selectableItemBackground">
+    android:padding="12dp">
 
     <TextView
         android:id="@+id/textPeriodTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cycle"
-        android:textStyle="bold"
-        android:textSize="14sp" />
+        android:text="@string/period_item_placeholder_title"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textPeriodDates"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Du … au …"
-        android:textSize="13sp"
-        android:layout_marginTop="2dp" />
+        android:layout_marginTop="2dp"
+        android:text="@string/period_item_placeholder_dates"
+        android:textSize="13sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
         android:gravity="end"
-        android:layout_marginTop="4dp">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/buttonEdit"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="Modifier"
-            android:textSize="12sp"
+            android:backgroundTint="@color/flowberry_surface_alt"
             android:paddingLeft="8dp"
-            android:paddingRight="8dp" />
+            android:paddingRight="8dp"
+            android:text="@string/edit"
+            android:textColor="@color/flowberry_text_primary"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/buttonDelete"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="Supprimer"
-            android:textSize="12sp"
             android:layout_marginStart="8dp"
+            android:backgroundTint="@color/flowberry_surface_alt"
             android:paddingLeft="8dp"
-            android:paddingRight="8dp" />
+            android:paddingRight="8dp"
+            android:text="@string/delete"
+            android:textColor="@color/flowberry_text_primary"
+            android:textSize="12sp" />
     </LinearLayout>
 
 </LinearLayout>

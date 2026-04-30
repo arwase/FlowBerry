@@ -1,0 +1,93 @@
+﻿<resources>
+    <string name="app_logo_content_description">Logo FlowBerry</string>
+    <string name="app_subtitle">Calendrier menstruel</string>
+    <string name="fab_add_period">Déclarer mes règles</string>
+    <string name="fab_add_symptom">Ajouter un symptôme</string>
+
+    <string name="nav_calendar">Calendrier</string>
+    <string name="nav_info">Informations</string>
+    <string name="nav_stats">Mes statistiques</string>
+    <string name="nav_settings">Options</string>
+
+    <string name="article_toolbar_title">Article</string>
+    <string name="article_placeholder_category">Guide FlowBerry</string>
+    <string name="article_placeholder_title">Titre</string>
+    <string name="article_placeholder_summary">Résumé</string>
+    <string name="article_body_section_title">Article</string>
+    <string name="article_sources_section_title">Sources pour aller plus loin</string>
+    <string name="article_category_flowberry">Guide FlowBerry</string>
+    <string name="article_category_cycle">Cycle et santé</string>
+    <string name="article_source_name_placeholder">Nom de la source</string>
+
+    <string name="edit_period_title">Déclarer une période</string>
+    <string name="edit_period_question">Que veux-tu déclarer ?</string>
+    <string name="edit_period_explanation">Renseigne le début de tes dernières règles et, si elles sont terminées, leur date de fin. La date peut être approximative au départ : les anticipations de FlowBerry sont alors basées sur des moyennes et s’affineront au fil des renseignements. Si tu connais d’anciens cycles depuis une autre application, tu peux aussi les ajouter ensuite avec le bouton de déclaration des cycles.</string>
+    <string name="edit_period_start">Début des règles</string>
+    <string name="edit_period_end">Fin des règles</string>
+    <string name="edit_period_date_label">Date :</string>
+    <string name="edit_period_ongoing_checkbox">Règles toujours en cours</string>
+    <string name="edit_period_end_date_label">Date de fin :</string>
+    <string name="save">Enregistrer</string>
+    <string name="cancel">Annuler</string>
+    <string name="later">Plus tard</string>
+    <string name="edit_period_initial_title">Première connexion</string>
+    <string name="edit_period_initial_question">Dates de tes dernières règles</string>
+    <string name="edit_period_edit_title">Modifier ce cycle</string>
+    <string name="edit_period_error_start_after_end">Le début ne peut pas être après la fin</string>
+    <string name="edit_period_error_end_before_start">La fin ne peut pas être avant le début</string>
+
+    <string name="edit_symptom_add_title">Ajouter un symptôme</string>
+    <string name="edit_symptom_edit_title">Modification d’un symptôme</string>
+    <string name="edit_symptom_date_hint">Date</string>
+    <string name="edit_symptom_type_hint">Symptôme</string>
+    <string name="edit_symptom_new_type">Nouveau type de symptôme ?</string>
+    <string name="edit_symptom_intensity_label">Intensité</string>
+    <string name="edit_symptom_intensity_value">Intensité : %1$d / 5</string>
+    <string name="edit_symptom_notes_hint">Notes</string>
+    <string name="edit_symptom_new_dialog_title">Nouveau symptôme</string>
+    <string name="edit_symptom_new_dialog_hint">Nom du symptôme</string>
+    <string name="add">Ajouter</string>
+    <string name="edit_symptom_choose_date">Choisir une date</string>
+    <string name="edit_symptom_required">Type et intensité sont obligatoires</string>
+    <string name="edit_symptom_invalid_intensity">L’intensité doit être entre 1 et 5</string>
+    <string name="edit_symptom_saved">Symptôme enregistré</string>
+    <string name="edit_symptom_updated">Symptôme modifié</string>
+
+    <string name="info_title">Informations</string>
+    <string name="info_intro">Deux espaces pour mieux se repérer : un pour comprendre FlowBerry, un autre pour explorer le cycle et ses manifestations plus largement.</string>
+    <string name="info_flowberry_category">FlowBerry</string>
+    <string name="info_flowberry_title">Comment fonctionne FlowBerry</string>
+    <string name="info_flowberry_summary">Des articles centrés sur la logique de l’application, ses estimations et la manière dont elle affiche les repères du cycle.</string>
+    <string name="info_cycle_category">Cycle et santé</string>
+    <string name="info_cycle_title">Comprendre son cycle</string>
+    <string name="info_cycle_summary">Des repères plus généraux et plus médicaux sur les phases, les règles et les symptômes que l’on peut traverser.</string>
+    <string name="info_read">Lire</string>
+
+    <string name="stats_summary_title">Résumé</string>
+    <string name="stats_cycle_average_label">Durée moyenne du cycle :</string>
+    <string name="stats_period_average_label">Durée moyenne des règles :</string>
+    <string name="stats_next_period_label">Prochain début estimé :</string>
+    <string name="stats_cycles_title">Cycles déclarés</string>
+    <string name="stats_cycle_average_default">%1$d jours (valeur par défaut)</string>
+    <string name="stats_period_average_default">%1$d jours (valeur par défaut)</string>
+    <string name="stats_cycle_average_value">Durée moyenne du cycle : %1$.1f jours</string>
+    <string name="stats_period_average_value">Durée moyenne des règles : %1$.1f jours</string>
+    <string name="stats_cycle_average_fallback">Durée moyenne du cycle : %1$s</string>
+    <string name="stats_period_average_fallback">Durée moyenne des règles : %1$s</string>
+    <string name="stats_next_period_value">Prochain début estimé : %1$s</string>
+    <string name="stats_next_period_empty">Prochain début estimé : -</string>
+
+    <string name="period_item_placeholder_title">Cycle</string>
+    <string name="period_item_placeholder_dates">Du ... au ...</string>
+    <string name="edit">Modifier</string>
+    <string name="delete">Supprimer</string>
+    <string name="period_item_current_cycle">Cycle en cours</string>
+    <string name="period_item_cycle_length">Cycle de %1$d jours</string>
+    <string name="period_item_dates_range">Règles : %1$s → %2$s</string>
+    <string name="period_item_dates_current">Règles : %1$s (en cours)</string>
+
+    <string name="symptom_item_placeholder_name">Maux de ventre</string>
+    <string name="symptom_item_placeholder_intensity">(3/5)</string>
+    <string name="symptom_item_intensity">(%1$d/5)</string>
+    <string name="unknown_dash">-</string>
+</resources>

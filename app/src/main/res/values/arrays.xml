@@ -1,0 +1,63 @@
+﻿<resources>
+    <string-array name="theme_entries">
+        <item>Selon le système</item>
+        <item>Thème clair</item>
+        <item>Thème sombre</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="language_entries">
+        <item>Suivre le système</item>
+        <item>Français</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>system</item>
+        <item>fr</item>
+        <item>en</item>
+    </string-array>
+
+    <string-array name="default_symptom_names">
+        <item>Crampes</item>
+        <item>Maux de ventre</item>
+        <item>Mal de dos</item>
+        <item>Migraine</item>
+        <item>Poitrine sensible</item>
+        <item>Fatigue</item>
+        <item>Insomnie</item>
+        <item>Ballonnements</item>
+        <item>Nausées</item>
+        <item>Acné</item>
+        <item>Sautes d’humeur</item>
+        <item>Irritabilité</item>
+        <item>Anxiété</item>
+        <item>Baisse de moral</item>
+        <item>Libido élevée</item>
+        <item>Pertes blanches</item>
+    </string-array>
+
+    <string-array name="default_symptom_categories">
+        <item>Douleur</item>
+        <item>Douleur</item>
+        <item>Douleur</item>
+        <item>Douleur</item>
+        <item>Douleur</item>
+        <item>Énergie</item>
+        <item>Sommeil</item>
+        <item>Digestion</item>
+        <item>Digestion</item>
+        <item>Peau</item>
+        <item>Humeur</item>
+        <item>Humeur</item>
+        <item>Humeur</item>
+        <item>Humeur</item>
+        <item>Sexualité</item>
+        <item>Cycle</item>
+    </string-array>
+</resources>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_logo_content_description">FlowBerry logo</string>
+    <string name="app_subtitle">Menstrual calendar</string>
+    <string name="fab_add_period">Log my period</string>
+    <string name="fab_add_symptom">Add a symptom</string>
+
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_info">Information</string>
+    <string name="nav_stats">My statistics</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="article_toolbar_title">Article</string>
+    <string name="article_placeholder_category">FlowBerry Guide</string>
+    <string name="article_placeholder_title">Title</string>
+    <string name="article_placeholder_summary">Summary</string>
+    <string name="article_body_section_title">Article</string>
+    <string name="article_sources_section_title">Sources to go further</string>
+    <string name="article_category_flowberry">FlowBerry Guide</string>
+    <string name="article_category_cycle">Cycle and health</string>
+    <string name="article_source_name_placeholder">Source name</string>
+
+    <string name="edit_period_title">Log a period</string>
+    <string name="edit_period_question">What do you want to log?</string>
+    <string name="edit_period_explanation">Enter the start of your latest period and, if it has ended, its end date. The date can be approximate at first: FlowBerry predictions are then based on averages and will become more accurate as you log more information. If you know older cycles from another app, you can also add them later with the cycle logging button.</string>
+    <string name="edit_period_start">Period start</string>
+    <string name="edit_period_end">Period end</string>
+    <string name="edit_period_date_label">Date:</string>
+    <string name="edit_period_ongoing_checkbox">Period still ongoing</string>
+    <string name="edit_period_end_date_label">End date:</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="later">Later</string>
+    <string name="edit_period_initial_title">First launch</string>
+    <string name="edit_period_initial_question">Dates of your latest period</string>
+    <string name="edit_period_edit_title">Edit this cycle</string>
+    <string name="edit_period_error_start_after_end">The start cannot be after the end</string>
+    <string name="edit_period_error_end_before_start">The end cannot be before the start</string>
+
+    <string name="edit_symptom_add_title">Add a symptom</string>
+    <string name="edit_symptom_edit_title">Edit a symptom</string>
+    <string name="edit_symptom_date_hint">Date</string>
+    <string name="edit_symptom_type_hint">Symptom</string>
+    <string name="edit_symptom_new_type">New symptom type ?</string>
+    <string name="edit_symptom_intensity_label">Intensity</string>
+    <string name="edit_symptom_intensity_value">Intensity: %1$d / 5</string>
+    <string name="edit_symptom_notes_hint">Notes</string>
+    <string name="edit_symptom_new_dialog_title">New symptom</string>
+    <string name="edit_symptom_new_dialog_hint">Symptom name</string>
+    <string name="add">Add</string>
+    <string name="edit_symptom_choose_date">Choose a date</string>
+    <string name="edit_symptom_required">Type and intensity are required</string>
+    <string name="edit_symptom_invalid_intensity">Intensity must be between 1 and 5</string>
+    <string name="edit_symptom_saved">Symptom saved</string>
+    <string name="edit_symptom_updated">Symptom updated</string>
+
+    <string name="info_title">Information</string>
+    <string name="info_intro">Two spaces to help you find your bearings: one to understand FlowBerry, and another to explore the cycle and its manifestations more broadly.</string>
+    <string name="info_flowberry_category">FlowBerry</string>
+    <string name="info_flowberry_title">How FlowBerry works</string>
+    <string name="info_flowberry_summary">Articles focused on the application logic, its estimates, and the way it displays cycle markers.</string>
+    <string name="info_cycle_category">Cycle and health</string>
+    <string name="info_cycle_title">Understanding your cycle</string>
+    <string name="info_cycle_summary">More general and more medical markers about phases, periods, and symptoms you may experience.</string>
+    <string name="info_read">Read</string>
+
+    <string name="stats_summary_title">Summary</string>
+    <string name="stats_cycle_average_label">Average cycle length:</string>
+    <string name="stats_period_average_label">Average period length:</string>
+    <string name="stats_next_period_label">Estimated next start:</string>
+    <string name="stats_cycles_title">Logged cycles</string>
+    <string name="stats_cycle_average_default">%1$d days (default value)</string>
+    <string name="stats_period_average_default">%1$d days (default value)</string>
+    <string name="stats_cycle_average_value">Average cycle length: %1$.1f days</string>
+    <string name="stats_period_average_value">Average period length: %1$.1f days</string>
+    <string name="stats_cycle_average_fallback">Average cycle length: %1$s</string>
+    <string name="stats_period_average_fallback">Average period length: %1$s</string>
+    <string name="stats_next_period_value">Estimated next start: %1$s</string>
+    <string name="stats_next_period_empty">Estimated next start: -</string>
+
+    <string name="period_item_placeholder_title">Cycle</string>
+    <string name="period_item_placeholder_dates">From ... to ...</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="period_item_current_cycle">Current cycle</string>
+    <string name="period_item_cycle_length">Cycle of %1$d days</string>
+    <string name="period_item_dates_range">Period: %1$s → %2$s</string>
+    <string name="period_item_dates_current">Period: %1$s (ongoing)</string>
+
+    <string name="symptom_item_placeholder_name">Stomach ache</string>
+    <string name="symptom_item_placeholder_intensity">(3/5)</string>
+    <string name="symptom_item_intensity">(%1$d/5)</string>
+    <string name="unknown_dash">-</string>
+</resources>

@@ -1,0 +1,37 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Segment 1 -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="
+            M22,12
+            A10,10 0 0 1 9,20.66
+            L13,17.9
+            A6,6 0 0 0 18,12
+            Z" />
+
+    <!-- Segment 2 -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="
+            M7,20.66
+            A10,10 0 0 1 6,4.34
+            L6,9.5
+            A6,6 0 0 0 9,17.2
+            Z" />
+
+    <!-- Segment 3 -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="
+            M7,3.34
+            A10,10 0 0 1 21.5,10
+            L16.5,8
+            A6,6 0 0 0 9,6.8
+            Z" />
+
+</vector>

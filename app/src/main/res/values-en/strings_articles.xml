@@ -1,0 +1,37 @@
+<resources>
+    <string name="article_flowberry_overview_title">How FlowBerry works</string>
+    <string name="article_flowberry_overview_summary">The markers used by the application to display the calendar, phases, and estimates.</string>
+    <string name="article_flowberry_overview_p1">FlowBerry first relies on a concrete piece of information: the first day of the period. From these dates, the application recalculates already confirmed cycles and derives markers for the current cycle.</string>
+    <string name="article_flowberry_overview_p2">Periods are highlighted in the calendar, even though they are biologically part of the follicular phase. This choice makes the screen more readable and highlights the most useful day to day information.</string>
+    <string name="article_flowberry_overview_p3">The other phases are estimated from recorded cycles. When history is still short, these estimates remain cautious and may evolve as more cycles are entered.</string>
+
+    <string name="article_anticipation_title">FlowBerry anticipation</string>
+    <string name="article_anticipation_summary">How the application offers estimates for phases, fertility, and symptoms.</string>
+    <string name="article_anticipation_p1">FlowBerry does not predict the body with certainty. The application offers estimates based on past cycles and already observed real symptoms.</string>
+    <string name="article_anticipation_p2">Anticipated symptoms appear when the same symptom comes back consistently enough at a comparable moment in the cycle. The idea is to provide a marker, not to announce an unavoidable symptom.</string>
+    <string name="article_anticipation_p3">Fertility information depends on the chosen setting. It can be presented as an opportunity around ovulation, or as preventive information if the user prefers a more cautious reading.</string>
+
+    <string name="article_cycle_title">The menstrual cycle</string>
+    <string name="article_cycle_summary">A cycle is read from the first day of a period to the first day of the next period.</string>
+    <string name="article_cycle_p1">The menstrual cycle begins on the first day of the period and ends the day before the next period starts. This definition makes it possible to compare cycles with each other.</string>
+    <string name="article_cycle_p2">A cycle does not need to last 28 days to be normal. Some people have shorter cycles, others longer ones, and the same person may have variations from one month to another.</string>
+    <string name="article_cycle_p3">The most variable part of the cycle is often the follicular phase. The luteal phase generally tends to remain more stable, although it can also change slightly.</string>
+
+    <string name="article_phases_title">The different phases</string>
+    <string name="article_phases_summary">Follicular, ovulation, luteal: three major markers for reading the cycle.</string>
+    <string name="article_phases_p1">The follicular phase starts as soon as the period begins. It is a phase during which the body gradually prepares for ovulation, even if what we mostly remember is the presence of bleeding at the very beginning.</string>
+    <string name="article_phases_p2">Around ovulation, some people notice more energy, more abundant cervical mucus, or mild sensitivity on one side of the lower abdomen. Others do not feel any particular sign.</string>
+    <string name="article_phases_p3">The luteal phase follows ovulation until the next period. It may bring more marked fatigue, breast tenderness, bloating, mood changes, or on the contrary very few changes.</string>
+
+    <string name="article_pms_title">Premenstrual symptoms</string>
+    <string name="article_pms_summary">Premenstrual syndrome may be mild, variable, or sometimes very uncomfortable.</string>
+    <string name="article_pms_p1">Premenstrual symptoms can be physical, emotional, or both: fatigue, tender breasts, irritability, headaches, bloating, cravings, reduced concentration, or a stronger need for rest.</string>
+    <string name="article_pms_p2">They do not necessarily appear in every cycle and may start a few hours before the period or several days before. Their intensity can also vary a lot from one month to another.</string>
+    <string name="article_pms_p3">When symptoms become very marked, very painful, or disabling in daily life, discussing them with a healthcare professional can help distinguish between usual variation, significant premenstrual syndrome, or premenstrual dysphoric disorder.</string>
+
+    <string name="article_periods_title">Periods</string>
+    <string name="article_periods_summary">A few simple markers about what periods represent and what can vary.</string>
+    <string name="article_periods_p1">Periods correspond to the shedding of part of the uterine lining when pregnancy has not occurred. Their presence marks the beginning of a new cycle.</string>
+    <string name="article_periods_p2">Duration, flow, and associated sensations can vary. Some people have short and not very painful periods, while others have longer, heavier, or more tiring periods.</string>
+    <string name="article_periods_p3">Very heavy bleeding, very intense pain, fainting, or prolonged absence of periods deserve a discussion with a healthcare professional, especially if things change suddenly.</string>
+</resources>

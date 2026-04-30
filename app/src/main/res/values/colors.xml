@@ -2,18 +2,39 @@
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="flowberry_purple">#7A2748</color>
+    <color name="purple_700">#81F0E5</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="phase_menstruation">#E57373</color>   <!-- rouge clair -->
-    <color name="phase_follicular">#64B5F6</color>    <!-- bleu -->
-    <color name="phase_ovulation">#FFD54F</color>     <!-- jaune -->
-    <color name="phase_luteal">#81C784</color>        <!-- vert -->
-    <color name="phase_pms">#BA68C8</color>           <!-- violet -->
-    <color name="flowberry_primary">#FF6C6C</color>        <!-- rose/rouge doux -->
-    <color name="flowberry_primary_dark">#E6455F</color>  <!-- un peu plus foncé -->
-    <color name="flowberry_accent">#FFFFFF</color>        <!-- texte blanc -->
 
+    <color name="phase_menstruation">#D86C7E</color>
+    <color name="phase_follicular">#5FA6D8</color>
+    <color name="phase_ovulation">#E5B63E</color>
+    <color name="phase_luteal">#6FAF82</color>
+    <color name="phase_pms">#9B6BC8</color>
+
+    <color name="flowberry_primary">#7A2748</color>
+    <color name="flowberry_primary_dark">#A44E6A</color>
+    <color name="flowberry_primary_variant">#5C1734</color>
+    <color name="flowberry_secondary">#D7B6A8</color>
+    <color name="flowberry_accent">#FFF8F5</color>
+    <color name="flowberry_background_light">#F6ECE7</color>
+    <color name="flowberry_background_dark">#43281C</color>
+
+    <color name="flowberry_background">#F6ECE7</color>
+    <color name="flowberry_surface">#FFF9F6</color>
+    <color name="flowberry_surface_alt">#EEDFD7</color>
+    <color name="flowberry_nav_surface">#EAD9D1</color>
+    <color name="flowberry_text_primary">#2C1A18</color>
+    <color name="flowberry_text_secondary">#6B534E</color>
+    <color name="flowberry_text_inverse">#FFF8F5</color>
+    <color name="flowberry_status_bar">#5C1734</color>
+    <color name="flowberry_divider">#D8C3BB</color>
+    <color name="flowberry_card_stroke">#D2B4A8</color>
+    <color name="flowberry_link">#8C3656</color>
+    <color name="flowberry_chip_neutral">#E7D6CE</color>
+    <color name="flowberry_ink">#241517</color>
+    <color name="flowberry_cream">#FFF8F5</color>
 </resources>

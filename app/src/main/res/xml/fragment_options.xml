@@ -1,0 +1,108 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:layout="@layout/pref_title_custom"
+        android:title="@string/settings_appearance_title">
+
+        <ListPreference
+            android:key="pref_theme_mode"
+            android:defaultValue="0"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:summary="@string/settings_theme_summary"
+            android:title="@string/settings_theme_title"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            android:key="pref_app_language"
+            android:defaultValue="system"
+            android:entries="@array/language_entries"
+            android:entryValues="@array/language_values"
+            android:summary="@string/settings_language_summary"
+            android:title="@string/settings_language_title"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/pref_title_custom"
+        android:title="@string/settings_cycle_display_title">
+
+        <SwitchPreferenceCompat
+            android:key="show_pms"
+            android:defaultValue="true"
+            android:title="@string/settings_show_pms_title"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="show_luteal"
+            android:defaultValue="false"
+            android:title="@string/settings_show_luteal_title"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="show_follicular"
+            android:defaultValue="false"
+            android:title="@string/settings_show_follicular_title"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="show_ovulation_as_wanted"
+            android:defaultValue="false"
+            android:title="@string/settings_show_ovulation_title"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="show_fertility_warnings"
+            android:defaultValue="true"
+            android:title="@string/settings_show_fertility_warnings_title"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="pref_rebuild_patterns"
+            android:summary="@string/settings_rebuild_patterns_summary"
+            android:title="@string/settings_rebuild_patterns_title"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/pref_title_custom"
+        android:title="@string/settings_notifications_title">
+
+        <SwitchPreferenceCompat
+            android:key="pref_important_notifications"
+            android:defaultValue="false"
+            android:summary="@string/settings_notifications_toggle_summary"
+            android:title="@string/settings_notifications_toggle_title"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/pref_title_custom"
+        android:title="@string/settings_sharing_title">
+
+        <Preference
+            android:key="pref_export_calendar_backup"
+            android:summary="@string/backup_export_summary"
+            android:title="@string/backup_export_title"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="pref_import_calendar_backup"
+            android:summary="@string/backup_import_summary"
+            android:title="@string/backup_import_title"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/pref_title_custom"
+        android:title="@string/privacy_policy_category">
+
+        <Preference
+            android:key="pref_privacy_policy"
+            android:summary="@string/privacy_policy_open_summary"
+            android:title="@string/privacy_policy_title"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

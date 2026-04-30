@@ -1,0 +1,46 @@
+﻿<resources>
+    <string name="calendar_today">Aujourd’hui</string>
+    <string name="calendar_unknown">Inconnue</string>
+    <string name="calendar_phase_period">Règles</string>
+    <string name="calendar_phase_estimated_period">Règles estimées</string>
+    <string name="calendar_phase_follicular">Folliculaire</string>
+    <string name="calendar_phase_ovulation">Ovulation</string>
+    <string name="calendar_phase_luteal">Lutéale</string>
+    <string name="calendar_phase_luteal_pms">Lutéale • PMS</string>
+    <string name="calendar_selected_date">Date sélectionnée :</string>
+    <string name="calendar_hint_period_low_fertility">Règles • fertilité faible</string>
+    <string name="calendar_hint_pms_low_fertility">PMS • fertilité faible</string>
+    <string name="calendar_hint_fertile_window">Fenêtre fertile</string>
+    <string name="calendar_hint_fertile_protection">Période fertile • protection conseillée</string>
+    <string name="calendar_quick_start_period">Début des règles</string>
+    <string name="calendar_quick_end_period">Fin des règles</string>
+    <string name="calendar_quick_start_saved">Début des règles enregistré</string>
+    <string name="calendar_quick_end_saved">Fin des règles enregistrée</string>
+    <string name="calendar_symptom_deleted">Le symptôme a été supprimé</string>
+    <string name="calendar_symptom_validated">Le symptôme a été validé</string>
+    <string name="calendar_confirmed_symptom_note">Symptôme confirmé</string>
+    <string name="calendar_anticipated_symptom_note">Symptôme anticipé • %1$d%% des cycles</string>
+    <string name="calendar_legend_period">Règles</string>
+    <string name="calendar_legend_follicular">Folliculaire</string>
+    <string name="calendar_legend_ovulation">Ovulation</string>
+    <string name="calendar_legend_luteal">Lutéale</string>
+    <string name="calendar_legend_pms">Jours PMS</string>
+    <string name="calendar_symptoms_title">Symptômes</string>
+    <string name="calendar_placeholder_phase">Règles</string>
+    <string name="calendar_placeholder_fertility">Période fertile</string>
+    <string name="calendar_placeholder_quick_action">Début des règles</string>
+    <string name="calendar_prediction_warning">Tant qu’un cycle complet n’a pas été déclaré, les estimations sont basées sur des moyennes et s’affineront avec le temps.</string>
+
+    <string name="notification_channel_name">Notifications importantes</string>
+    <string name="notification_channel_description">Rappels pour les règles estimées et le début de fertilité.</string>
+    <string name="notification_period_title">Règles estimées aujourd’hui</string>
+    <string name="notification_period_message">Prévoir une protection hygiénique si besoin.</string>
+    <string name="notification_fertility_title">Début de fertilité estimé</string>
+    <string name="notification_fertility_message">Protection conseillée si vous ne cherchez pas une grossesse.</string>
+
+    <string name="period_recorder_db_unavailable">Base de données indisponible</string>
+    <string name="period_recorder_already_open">Des règles sont déjà en cours</string>
+    <string name="period_recorder_overlapping_date">Cette date appartient déjà à une période</string>
+    <string name="period_recorder_no_open_period">Aucune période en cours trouvée</string>
+    <string name="period_recorder_end_before_start">La fin ne peut pas être avant le début</string>
+</resources>

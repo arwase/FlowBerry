@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/flowberry_background"
     android:fitsSystemWindows="true">
 
-    <!-- Barre du haut avec flèche retour -->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -14,19 +14,19 @@
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            app:title="Déclarer un changement"
-            app:titleTextColor="@android:color/white"
-            app:navigationIcon="@drawable/ic_arrow_back" />
+            android:background="@color/flowberry_primary"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/edit_period_title"
+            app:titleTextColor="@color/flowberry_text_inverse" />
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- Contenu qui défile sous la barre -->
-    <ScrollView    android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:padding="16dp">
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -36,73 +36,105 @@
                 android:id="@+id/textQuestion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Que veux-tu déclarer ?"
+                android:layout_marginBottom="8dp"
+                android:text="@string/edit_period_question"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textExplanation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pour que FlowBerry puisse commencer à estimer ton cycle, indique simplement le premier jour de tes dernières règles."
+                android:layout_marginBottom="8dp"
+                android:text="@string/edit_period_explanation"
                 android:textSize="16sp"
                 android:textStyle="italic"
-                android:layout_marginBottom="8dp"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
             <RadioGroup
                 android:id="@+id/radioGroupType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/radioStart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Début des règles"
-                    android:checked="true" />
+                    android:checked="true"
+                    android:text="@string/edit_period_start" />
 
                 <RadioButton
                     android:id="@+id/radioEnd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fin des règles"
-                    android:layout_marginStart="16dp" />
+                    android:layout_marginStart="16dp"
+                    android:text="@string/edit_period_end" />
             </RadioGroup>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date :"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/textStartDateLabel"
+                android:text="@string/edit_period_date_label"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/datePickerPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true" />
+
+            <CheckBox
+                android:id="@+id/checkPeriodFinished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/edit_period_ongoing_checkbox"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textEndDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/edit_period_end_date_label"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="4dp" />
+                android:visibility="gone" />
 
-            <!-- Inline Calendar -->
-            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
-                android:id="@+id/inlineCalendar"
+            <DatePicker
+                android:id="@+id/datePickerPeriodEnd"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                app:mcv_selectionMode="single"
-                app:mcv_showOtherDates="none"
-                app:mcv_firstDayOfWeek="monday"/>
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true"
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/buttonSavePeriod"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enregistrer"
-                android:layout_marginTop="24dp" />
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/flowberry_primary"
+                android:text="@string/save"
+                android:textColor="@color/flowberry_text_inverse" />
 
             <Button
                 android:id="@+id/buttonCancelPeriod"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Annuler"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/flowberry_surface_alt"
+                android:text="@string/cancel"
+                android:textColor="@color/flowberry_text_primary" />
 
         </LinearLayout>
     </ScrollView>

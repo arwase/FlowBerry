@@ -1,0 +1,46 @@
+﻿<resources>
+    <string name="calendar_today">Today</string>
+    <string name="calendar_unknown">Unknown</string>
+    <string name="calendar_phase_period">Period</string>
+    <string name="calendar_phase_estimated_period">Estimated period</string>
+    <string name="calendar_phase_follicular">Follicular</string>
+    <string name="calendar_phase_ovulation">Ovulation</string>
+    <string name="calendar_phase_luteal">Luteal</string>
+    <string name="calendar_phase_luteal_pms">Luteal • PMS</string>
+    <string name="calendar_selected_date">Selected date:</string>
+    <string name="calendar_hint_period_low_fertility">Period • low fertility</string>
+    <string name="calendar_hint_pms_low_fertility">PMS • low fertility</string>
+    <string name="calendar_hint_fertile_window">Fertile window</string>
+    <string name="calendar_hint_fertile_protection">Fertile period • protection advised</string>
+    <string name="calendar_quick_start_period">Period start</string>
+    <string name="calendar_quick_end_period">Period end</string>
+    <string name="calendar_quick_start_saved">Period start saved</string>
+    <string name="calendar_quick_end_saved">Period end saved</string>
+    <string name="calendar_symptom_deleted">The symptom was deleted</string>
+    <string name="calendar_symptom_validated">The symptom was confirmed</string>
+    <string name="calendar_confirmed_symptom_note">Confirmed symptom</string>
+    <string name="calendar_anticipated_symptom_note">Anticipated symptom • %1$d%% of cycles</string>
+    <string name="calendar_legend_period">Period</string>
+    <string name="calendar_legend_follicular">Follicular</string>
+    <string name="calendar_legend_ovulation">Ovulation</string>
+    <string name="calendar_legend_luteal">Luteal</string>
+    <string name="calendar_legend_pms">PMS days</string>
+    <string name="calendar_symptoms_title">Symptoms</string>
+    <string name="calendar_placeholder_phase">Period</string>
+    <string name="calendar_placeholder_fertility">Fertile period</string>
+    <string name="calendar_placeholder_quick_action">Period start</string>
+    <string name="calendar_prediction_warning">Until one complete cycle has been logged, estimates are based on averages and will improve over time.</string>
+
+    <string name="notification_channel_name">Important notifications</string>
+    <string name="notification_channel_description">Reminders for estimated periods and fertility start.</string>
+    <string name="notification_period_title">Estimated period today</string>
+    <string name="notification_period_message">Plan sanitary protection if needed.</string>
+    <string name="notification_fertility_title">Estimated fertility start</string>
+    <string name="notification_fertility_message">Protection advised if you are not trying to get pregnant.</string>
+
+    <string name="period_recorder_db_unavailable">Database unavailable</string>
+    <string name="period_recorder_already_open">A period is already ongoing</string>
+    <string name="period_recorder_overlapping_date">This date already belongs to a period</string>
+    <string name="period_recorder_no_open_period">No ongoing period found</string>
+    <string name="period_recorder_end_before_start">The end cannot be before the start</string>
+</resources>

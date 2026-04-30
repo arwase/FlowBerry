@@ -1,0 +1,37 @@
+﻿<resources>
+    <string name="article_flowberry_overview_title">Comment fonctionne FlowBerry</string>
+    <string name="article_flowberry_overview_summary">Les repères utilisés par l’application pour afficher le calendrier, les phases et les estimations.</string>
+    <string name="article_flowberry_overview_p1">FlowBerry se base d’abord sur une information concrète : le premier jour des règles. À partir de ces dates, l’application recalcule les cycles déjà confirmés et en déduit des repères pour le cycle en cours.</string>
+    <string name="article_flowberry_overview_p2">Les règles sont mises en avant dans le calendrier, même si elles font biologiquement partie de la phase folliculaire. Ce choix sert à rendre l’écran plus lisible et à faire ressortir l’information la plus utile au quotidien.</string>
+    <string name="article_flowberry_overview_p3">Les autres phases sont estimées à partir des cycles enregistrés. Quand l’historique est encore court, ces estimations restent prudentes et peuvent évoluer au fil des cycles saisis.</string>
+
+    <string name="article_anticipation_title">L’anticipation de FlowBerry</string>
+    <string name="article_anticipation_summary">Comment l’application propose des estimations de phases, de fertilité et de symptômes.</string>
+    <string name="article_anticipation_p1">FlowBerry ne prédit pas le corps avec certitude. L’application propose des estimations en s’appuyant sur les cycles passés et sur les symptômes réels déjà observés.</string>
+    <string name="article_anticipation_p2">Les symptômes anticipés apparaissent quand un même symptôme revient de manière suffisamment cohérente dans un moment comparable du cycle. L’idée est d’offrir un repère, pas d’annoncer un symptôme inévitable.</string>
+    <string name="article_anticipation_p3">L’information de fertilité dépend du réglage choisi. Elle peut être présentée comme une opportunité autour de l’ovulation, ou comme une information de prévention si l’utilisatrice préfère une lecture plus prudente.</string>
+
+    <string name="article_cycle_title">Le cycle menstruel</string>
+    <string name="article_cycle_summary">Un cycle se lit du premier jour des règles au premier jour des règles suivantes.</string>
+    <string name="article_cycle_p1">Le cycle menstruel commence le premier jour des règles et se termine la veille du début des règles suivantes. C’est cette définition qui permet de comparer les cycles entre eux.</string>
+    <string name="article_cycle_p2">Un cycle n’a pas besoin de faire 28 jours pour être normal. Certaines personnes ont des cycles plus courts, d’autres des cycles plus longs, et une même personne peut avoir des variations d’un mois à l’autre.</string>
+    <string name="article_cycle_p3">La partie la plus variable du cycle est souvent la phase folliculaire. La phase lutéale tend généralement à rester plus stable, même si elle peut aussi changer légèrement.</string>
+
+    <string name="article_phases_title">Les différentes phases</string>
+    <string name="article_phases_summary">Folliculaire, ovulation, lutéale : trois grands repères pour lire le cycle.</string>
+    <string name="article_phases_p1">La phase folliculaire commence dès le début des règles. C’est une phase où le corps prépare progressivement l’ovulation, même si l’on retient surtout la présence des saignements au tout début.</string>
+    <string name="article_phases_p2">Autour de l’ovulation, certaines personnes remarquent davantage d’énergie, une glaire cervicale plus abondante ou une sensibilité légère d’un côté du bas ventre. D’autres ne ressentent aucun signe particulier.</string>
+    <string name="article_phases_p3">La phase lutéale suit l’ovulation jusqu’aux règles. On peut y retrouver une fatigue plus marquée, une poitrine sensible, des ballonnements, des variations d’humeur ou au contraire très peu de changements.</string>
+
+    <string name="article_pms_title">Les symptômes prémenstruels</string>
+    <string name="article_pms_summary">Le syndrome prémenstruel peut être léger, variable ou parfois très inconfortable.</string>
+    <string name="article_pms_p1">Les symptômes prémenstruels peuvent être physiques, émotionnels ou les deux : fatigue, seins sensibles, irritabilité, maux de tête, ballonnements, fringales, baisse de concentration ou besoin de repos plus fort.</string>
+    <string name="article_pms_p2">Ils n’apparaissent pas forcément à chaque cycle et peuvent commencer quelques heures avant les règles comme plusieurs jours avant. Leur intensité peut aussi beaucoup varier d’un mois à l’autre.</string>
+    <string name="article_pms_p3">Quand les symptômes deviennent très marqués, très douloureux ou handicapants dans la vie quotidienne, un échange avec un professionnel de santé peut aider à faire la part entre variation habituelle, syndrome prémenstruel important ou trouble dysphorique prémenstruel.</string>
+
+    <string name="article_periods_title">Les règles</string>
+    <string name="article_periods_summary">Quelques repères simples sur ce que représentent les règles et sur ce qui peut varier.</string>
+    <string name="article_periods_p1">Les règles correspondent à l’élimination d’une partie de la muqueuse utérine lorsqu’il n’y a pas eu de grossesse. Leur présence marque le début d’un nouveau cycle.</string>
+    <string name="article_periods_p2">La durée, l’abondance et les sensations associées peuvent varier. Certaines personnes ont des règles courtes et peu douloureuses, d’autres des règles plus longues, plus abondantes ou plus fatigantes.</string>
+    <string name="article_periods_p3">Des saignements très abondants, des douleurs très intenses, des malaises ou des absences de règles prolongées méritent une discussion avec un professionnel de santé, surtout si cela change brutalement.</string>
+</resources>

@@ -1,3 +1,58 @@
-<resources>
+﻿<resources>
     <string name="app_name">FlowBerry</string>
+
+    <string name="settings_appearance_title">Apparence</string>
+    <string name="settings_theme_title">Thème</string>
+    <string name="settings_theme_summary">Choisir le thème de l’application</string>
+    <string name="settings_language_title">Langue</string>
+    <string name="settings_language_summary">Choisir la langue de l’application</string>
+
+    <string name="settings_cycle_display_title">Affichage des phases du cycle</string>
+    <string name="settings_show_pms_title">Afficher les jours de syndrome prémenstruel</string>
+    <string name="settings_show_luteal_title">Afficher la phase lutéale</string>
+    <string name="settings_show_follicular_title">Afficher la phase folliculaire</string>
+    <string name="settings_show_ovulation_title">Afficher l’ovulation comme une opportunité</string>
+    <string name="settings_show_fertility_warnings_title">Afficher des préventions de fertilité</string>
+    <string name="settings_rebuild_patterns_title">Relancer le calcul des prédictions</string>
+    <string name="settings_rebuild_patterns_summary">Reconstruit les tendances à partir des cycles et symptômes réels</string>
+
+    <string name="settings_notifications_title">Notifications importantes</string>
+    <string name="settings_notifications_toggle_title">Recevoir les notifications</string>
+    <string name="settings_notifications_toggle_summary">Notifier le début des règles estimées et le début de la fertilité avec un message de prévention adapté.</string>
+    <string name="settings_notifications_permission_toast">Autorisez les notifications Android pour recevoir les rappels importants.</string>
+    <string name="settings_rebuild_predictions_done">Calcul des prédictions relancé</string>
+
+    <string name="settings_sharing_title">Partage</string>
+    <string name="backup_share_chooser_title">Exporter les données</string>
+    <string name="backup_share_subject">Sauvegarde FlowBerry</string>
+    <string name="backup_share_message">Sauvegarde exportée depuis FlowBerry.</string>
+    <string name="backup_export_title">Exporter les données</string>
+    <string name="backup_export_summary">Exporte une sauvegarde partageable de vos données.</string>
+    <string name="backup_export_success">Fichier de sauvegarde préparé.</string>
+    <string name="backup_export_error">Impossible de préparer la sauvegarde.</string>
+    <string name="backup_export_error_directory">Impossible de créer le dossier de sauvegarde.</string>
+    <string name="backup_export_error_encode">Impossible d’encoder la sauvegarde.</string>
+    <string name="backup_import_title">Importer des données</string>
+    <string name="backup_import_summary">Importe une sauvegarde FlowBerry et remplace les données actuelles.</string>
+    <string name="backup_import_error_generic">Impossible d’importer cette sauvegarde.</string>
+    <string name="backup_import_error_invalid">Le fichier sélectionné n’est pas une sauvegarde FlowBerry valide.</string>
+    <string name="backup_import_error_open">Impossible d’ouvrir le fichier de sauvegarde.</string>
+    <string name="backup_import_success">Sauvegarde importée.</string>
+    <string name="backup_import_success_details">%1$d cycles, %2$d symptômes, %3$d types importés.</string>
+
+    <string name="privacy_policy_title">Politique de confidentialité</string>
+    <string name="privacy_policy_category">Confidentialité</string>
+    <string name="privacy_policy_summary">FlowBerry est pensée pour fonctionner localement sur votre appareil, sans transmission de vos données personnelles à un serveur distant par défaut.</string>
+    <string name="privacy_policy_open_summary">Consulter la politique de confidentialité de FlowBerry.</string>
+    <string name="privacy_policy_body_1">1. Données traitées\n\nFlowBerry permet d’enregistrer localement des dates de cycle menstruel, des symptômes, des notes et certaines préférences d’affichage ou de notifications.</string>
+    <string name="privacy_policy_body_2">2. Stockage des données\n\nLes données sont stockées localement sur l’appareil de l’utilisatrice. Par défaut, FlowBerry n’utilise pas de serveur distant pour stocker les données personnelles.</string>
+    <string name="privacy_policy_body_3">3. Partage des données\n\nFlowBerry ne vend pas, ne loue pas et ne partage pas les données personnelles ou de santé avec des tiers.</string>
+    <string name="privacy_policy_body_4">4. Export et import\n\nL’application peut permettre d’exporter ou d’importer un fichier de sauvegarde. Cette action est déclenchée uniquement par l’utilisatrice.</string>
+    <string name="privacy_policy_body_5">5. Notifications\n\nSi les notifications sont activées, FlowBerry peut créer des rappels locaux sur l’appareil. Aucune donnée de santé n’est envoyée à un service distant pour générer ces rappels.</string>
+    <string name="privacy_policy_body_6">6. Permissions\n\nFlowBerry peut demander des permissions strictement nécessaires à ses fonctionnalités, par exemple les notifications ou le redémarrage des rappels après reboot.</string>
+    <string name="privacy_policy_body_7">7. Sécurité\n\nLes données restent sur l’appareil. La sécurité effective dépend aussi des protections mises en place sur le téléphone, comme le code, la biométrie ou le chiffrement.</string>
+    <string name="privacy_policy_body_8">8. Public concerné\n\nFlowBerry est un outil de suivi personnel. L’application n’est pas un dispositif médical et ne remplace pas l’avis d’un professionnel de santé.</string>
+    <string name="privacy_policy_body_9">9. Code source\n\nLe code de FlowBerry peut être rendu public dans une démarche open source. Cela n’inclut pas les données personnelles des utilisatrices.</string>
+    <string name="privacy_policy_body_10">10. Suppression des données\n\nL’utilisatrice peut supprimer ses données dans l’application ou en désinstallant l’application, sous réserve des mécanismes de sauvegarde du système Android.</string>
+    <string name="privacy_policy_body_11">11. Contact\n\nPour toute question relative à la confidentialité, contactez l’éditeur de l’application à l’adresse que vous publierez sur la fiche Play Store et dans votre politique de confidentialité en ligne.</string>
 </resources>

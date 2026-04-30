@@ -1,221 +1,276 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:orientation="vertical">
 
-        <!-- Infos sur la phase du cycle -->
-        <TextView
-            android:id="@+id/textSelectedDate"
-            android:layout_width="wrap_content"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCurrentInfo"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Date sélectionnée : "
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:layout_marginBottom="4dp" />
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true">
 
-        <TextView
-            android:id="@+id/textPhase"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Phase : inconnue"
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="112dp"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textSelectedDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minLines="2"
+                        android:text="@string/calendar_today"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textPhase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_phase_chip"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/calendar_placeholder_phase"
+                        android:textColor="@color/flowberry_ink"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutFertilityActions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textFertilityHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_phase_chip"
+                        android:drawablePadding="6dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/calendar_placeholder_fertility"
+                        android:textColor="@color/flowberry_ink"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonQuickPeriodAction"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:insetBottom="0dp"
+                        android:insetTop="0dp"
+                        android:minHeight="32dp"
+                        android:minWidth="0dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/calendar_placeholder_quick_action"
+                        android:textAllCaps="false"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textSize="11sp"
+                        android:visibility="gone"
+                        app:backgroundTint="?attr/colorPrimary"
+                        app:rippleColor="@color/flowberry_divider" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textPredictionWarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/calendar_prediction_warning"
+                    android:textColor="@color/flowberry_text_secondary"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
         <com.prolificinteractive.materialcalendarview.MaterialCalendarView
             android:id="@+id/calendarView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:mcv_showOtherDates="all"
+            android:layout_marginBottom="16dp"
+            app:mcv_dateTextAppearance="?attr/colorOnSurface"
             app:mcv_firstDayOfWeek="monday"
-            app:mcv_tileHeight="40dp"
-            android:layout_marginBottom="16dp"/>
+            app:mcv_headerTextAppearance="?attr/colorOnSurface"
+            app:mcv_selectionColor="?attr/colorSecondary"
+            app:mcv_showOtherDates="none"
+            app:mcv_tileHeight="32dp"
+            app:mcv_weekDayTextAppearance="?attr/colorOnSurface" />
 
-        <!-- Légende des phases -->
         <LinearLayout
             android:id="@+id/layoutLegend"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
             android:gravity="center"
-            android:layout_marginBottom="8dp">
+            android:orientation="horizontal">
 
-            <!-- Règles -->
             <LinearLayout
+                android:id="@+id/layoutLegendMenstruation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginEnd="8dp"
                 android:gravity="center_vertical"
-                android:layout_marginEnd="8dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="12dp"
                     android:layout_height="12dp"
-                    android:background="@drawable/legend_menstruation_circle"
-                    android:layout_marginEnd="4dp" />
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/legend_menstruation_circle" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Règles"
+                    android:text="@string/calendar_legend_period"
                     android:textSize="12sp" />
             </LinearLayout>
 
-            <!-- Folliculaire -->
             <LinearLayout
+                android:id="@+id/layoutLegendFollicular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginEnd="8dp"
                 android:gravity="center_vertical"
-                android:layout_marginEnd="8dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="12dp"
                     android:layout_height="12dp"
-                    android:background="@drawable/legend_follicular_circle"
-                    android:layout_marginEnd="4dp" />
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/legend_follicular_circle" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Folliculaire"
+                    android:text="@string/calendar_legend_follicular"
                     android:textSize="12sp" />
             </LinearLayout>
 
-            <!-- Ovulation -->
             <LinearLayout
+                android:id="@+id/layoutLegendOvulation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginEnd="8dp"
                 android:gravity="center_vertical"
-                android:layout_marginEnd="8dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="12dp"
                     android:layout_height="12dp"
-                    android:background="@drawable/legend_ovulation_circle"
-                    android:layout_marginEnd="4dp" />
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/legend_ovulation_circle" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ovulation"
+                    android:text="@string/calendar_legend_ovulation"
                     android:textSize="12sp" />
             </LinearLayout>
 
-            <!-- Lutéale -->
             <LinearLayout
+                android:id="@+id/layoutLegendLuteal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginEnd="8dp"
                 android:gravity="center_vertical"
-                android:layout_marginEnd="8dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="12dp"
                     android:layout_height="12dp"
-                    android:background="@drawable/legend_luteal_circle"
-                    android:layout_marginEnd="4dp" />
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/legend_luteal_circle" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lutéale"
+                    android:text="@string/calendar_legend_luteal"
                     android:textSize="12sp" />
             </LinearLayout>
 
-            <!-- PMS -->
             <LinearLayout
+                android:id="@+id/layoutLegendPMS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="12dp"
                     android:layout_height="12dp"
-                    android:background="@drawable/legend_pms_circle"
-                    android:layout_marginEnd="4dp" />
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/legend_pms_circle" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PMS"
+                    android:text="@string/calendar_legend_pms"
                     android:textSize="12sp" />
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Symptômes"
-                android:textStyle="bold"
-                android:textSize="20sp"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="4dp"/>
+                android:layout_marginBottom="4dp"
+                android:text="@string/calendar_symptoms_title"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerSymptoms"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
-            <!-- Ici tu mettras : phases, symptômes connus, types de pertes… -->
-
         </LinearLayout>
 
-        <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp">
-
-
-        </ScrollView>-->
-
-
-
-        <LinearLayout
-            android:id="@+id/fabContainer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="end"
-            android:layout_margin="16dp"
-            app:layout_anchorGravity="bottom|end"
-            android:layout_gravity="bottom|end">
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fabAddSymptom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="12dp"
-                app:srcCompat="@android:drawable/ic_input_add"
-                android:backgroundTint="@color/flowberry_primary"
-                android:contentDescription="Ajouter un symptôme" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fabAddPeriod"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                app:srcCompat="@drawable/ic_drop_blood"
-                android:backgroundTint="@color/flowberry_primary"
-                android:contentDescription="Déclarer mes règles" />
-
-        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

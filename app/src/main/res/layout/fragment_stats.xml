@@ -3,65 +3,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:padding="16dp"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/textResumeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Résumé"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="4dp"/>
-
+            android:layout_marginBottom="4dp"
+            android:text="@string/stats_summary_title"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textCycleAvg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Durée moyenne du cycle : "
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:text="@string/stats_cycle_average_label"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textPeriodAvg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Durée moyenne des règles : "
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:text="@string/stats_period_average_label"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textNextPeriod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prochain début estimé : "
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:text="@string/stats_next_period_label"
+            android:textSize="16sp" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#DDDDDD"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:background="@color/flowberry_divider" />
 
         <TextView
             android:id="@+id/textCyclesTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cycles déclarés"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="4dp"/>
+            android:layout_marginBottom="4dp"
+            android:text="@string/stats_cycles_title"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerPeriods"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
     </LinearLayout>
 

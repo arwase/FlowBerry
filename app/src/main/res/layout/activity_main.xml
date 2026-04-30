@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
     android:id="@+id/rootView"
-    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@color/flowberry_background"
+    android:fitsSystemWindows="true">
 
-    <!-- 🔵 Barre de titre -->
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/mainToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorOnPrimary"
+        android:background="@color/flowberry_surface"
         app:contentInsetStartWithNavigation="0dp">
 
         <LinearLayout
@@ -25,9 +24,8 @@
                 android:id="@+id/imageLogo"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/flowberry_logo"
-                android:contentDescription="Logo FlowBerry"
-                />
+                android:contentDescription="@string/app_logo_content_description"
+                android:src="@drawable/flowberry_logo" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -38,23 +36,22 @@
                     android:id="@+id/textTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FlowBerry"
-                    android:textStyle="bold"
+                    android:text="@string/app_name"
+                    android:textColor="@color/flowberry_primary"
                     android:textSize="24sp"
-                    android:textColor="?attr/colorPrimary" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textSubtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Calendrier menstruel"
-                    android:textSize="12sp"
-                    android:textColor="?attr/colorPrimary" />
+                    android:text="@string/app_subtitle"
+                    android:textColor="@color/flowberry_text_secondary"
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.appbar.MaterialToolbar>
 
-    <!-- Conteneur pour les fragments -->
     <FrameLayout
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
@@ -63,28 +60,49 @@
         android:layout_marginBottom="72dp"
         app:layout_anchorGravity="top" />
 
-    <!-- Bottom navigation -->
+    <LinearLayout
+        android:id="@+id/fabContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="8dp"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:paddingBottom="80dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/fab_add_period"
+            app:backgroundTint="@color/flowberry_primary"
+            app:elevation="0dp"
+            app:srcCompat="@drawable/ic_drop_blood"
+            app:tint="@color/flowberry_text_inverse" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddSymptom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:contentDescription="@string/fab_add_symptom"
+            app:backgroundTint="@color/flowberry_surface_alt"
+            app:elevation="0dp"
+            app:srcCompat="@drawable/ic_symptom_add_24"
+            app:tint="@color/flowberry_text_primary" />
+    </LinearLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:layout_gravity="bottom"
-        android:background="@android:color/white"
-        app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/menu_bottom_nav"
+        app:backgroundTint="@color/flowberry_nav_surface"
         app:itemIconSize="28dp"
-        app:itemIconTint="@color/flowberry_primary"
-         />
-
-    <!-- Bouton pour ajouter un symptôme
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabAddSymptom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="Ajouter un symptôme"
-        app:srcCompat="@android:drawable/ic_input_add"
-        app:layout_anchorGravity="bottom|end"
-        app:layout_anchor="@id/calendarView"
-        android:layout_margin="16dp" />-->
+        app:itemIconTint="@color/flowberry_text_primary"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_bottom_nav" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +16,7 @@
         android:theme="@style/Theme.FlowBerry"
         tools:targetApi="31">
 
-        <!-- ✅ Activity qui se lance au démarrage -->
+        <!-- Activity qui se lance au démarrage -->
         <activity
             android:name=".activities.MainActivity"
             android:theme="@style/Theme.FlowBerry"
@@ -26,13 +29,43 @@
 
         </activity>
 
-        <!-- ✅ Deuxième Activity, sans LAUNCHER -->
+        <!-- Autres activités internes, sans launcher -->
         <activity
             android:name=".activities.EditSymptomActivity"
             android:exported="false" />
         <activity
             android:name=".activities.EditPeriodActivity"
             android:exported="false" />
+        <activity
+            android:name=".activities.ArticleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PrivacyPolicyActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".receivers.ImportantNotificationReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".receivers.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>

@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/flowberry_background"
     android:fitsSystemWindows="true">
 
-    <!-- Barre du haut avec flèche retour -->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -15,70 +15,129 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
-            app:title="Ajouter un symptôme"
-            app:titleTextColor="@android:color/white"
-            app:navigationIcon="@drawable/ic_arrow_back" />
+            android:backgroundTint="@color/flowberry_primary"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/edit_symptom_add_title"
+            app:titleTextColor="@color/flowberry_text_inverse" />
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- Contenu qui défile sous la barre -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:padding="16dp">
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textEditSymptomDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Date : "
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:layout_marginBottom="8dp"/>
-
-            <EditText
-                android:id="@+id/editSymptomType"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutDate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Type de symptôme"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginTop="16dp"
+                android:hint="@string/edit_symptom_date_hint"
+                app:endIconDrawable="@drawable/ic_nav_calendar"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
 
-            <EditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editSymptomType"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_symptom_type_hint"
+                app:endIconMode="dropdown_menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteSymptom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonAddSymptomType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_symptom_new_type" />
+
+            <TextView
+                android:id="@+id/textViewIntensityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="0dp"
+                android:text="@string/edit_symptom_intensity_label"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.slider.Slider
                 android:id="@+id/editSymptomIntensity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Intensité (1-5)"
-                android:inputType="number"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginTop="8dp"
+                android:stepSize="1"
+                android:valueFrom="1"
+                android:valueTo="5"
+                app:labelBehavior="floating"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewIntensityLabel" />
+
+            <TextView
+                android:id="@+id/textViewIntensityValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/edit_symptom_intensity_value"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewIntensityLabel" />
 
             <EditText
                 android:id="@+id/editSymptomNotes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Notes"
-                android:minLines="3"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
                 android:gravity="top"
+                android:hint="@string/edit_symptom_notes_hint"
                 android:inputType="textMultiLine"
-                android:layout_marginBottom="16dp"/>
+                android:minLines="3" />
 
             <Button
                 android:id="@+id/buttonSaveSymptom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enregistrer" />
+                android:backgroundTint="@color/flowberry_primary"
+                android:text="@string/save"
+                android:textColor="@color/flowberry_text_inverse" />
 
             <Button
                 android:id="@+id/buttonCancelSymptom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Annuler" />
-
+                android:backgroundTint="@color/flowberry_surface_alt"
+                android:text="@string/cancel"
+                android:textColor="@color/flowberry_text_primary" />
 
         </LinearLayout>
     </ScrollView>
