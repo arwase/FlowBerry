@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="flowberry_primary">#E4AFC1</color>
+    <color name="flowberry_primary_dark">#F1BFD0</color>
+    <color name="flowberry_primary_variant">#C7869E</color>
+    <color name="flowberry_secondary">#6B4A45</color>
+    <color name="flowberry_accent">#1B1012</color>
+    <color name="flowberry_background_light">#F6ECE7</color>
+    <color name="flowberry_background_dark">#160F10</color>
+
+    <color name="flowberry_background">#160F10</color>
+    <color name="flowberry_surface">#231718</color>
+    <color name="flowberry_surface_alt">#2E2022</color>
+    <color name="flowberry_nav_surface">#2A1D1F</color>
+    <color name="flowberry_text_primary">#F7ECE7</color>
+    <color name="flowberry_text_secondary">#CAB5AE</color>
+    <color name="flowberry_text_inverse">#241517</color>
+    <color name="flowberry_status_bar">#160F10</color>
+    <color name="flowberry_divider">#4C3634</color>
+    <color name="flowberry_card_stroke">#684D4B</color>
+    <color name="flowberry_link">#F1BFD0</color>
+    <color name="flowberry_chip_neutral">#4B3634</color>
+</resources>

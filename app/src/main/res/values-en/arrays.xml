@@ -1,0 +1,63 @@
+<resources>
+    <string-array name="theme_entries">
+        <item>Follow system</item>
+        <item>Light theme</item>
+        <item>Dark theme</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="language_entries">
+        <item>Follow system</item>
+        <item>French</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>system</item>
+        <item>fr</item>
+        <item>en</item>
+    </string-array>
+
+    <string-array name="default_symptom_names">
+        <item>Cramps</item>
+        <item>Stomach ache</item>
+        <item>Back pain</item>
+        <item>Migraine</item>
+        <item>Breast tenderness</item>
+        <item>Fatigue</item>
+        <item>Insomnia</item>
+        <item>Bloating</item>
+        <item>Nausea</item>
+        <item>Acne</item>
+        <item>Mood swings</item>
+        <item>Irritability</item>
+        <item>Anxiety</item>
+        <item>Low mood</item>
+        <item>High libido</item>
+        <item>Vaginal discharge</item>
+    </string-array>
+
+    <string-array name="default_symptom_categories">
+        <item>Pain</item>
+        <item>Pain</item>
+        <item>Pain</item>
+        <item>Pain</item>
+        <item>Pain</item>
+        <item>Energy</item>
+        <item>Sleep</item>
+        <item>Digestion</item>
+        <item>Digestion</item>
+        <item>Skin</item>
+        <item>Mood</item>
+        <item>Mood</item>
+        <item>Mood</item>
+        <item>Mood</item>
+        <item>Sexuality</item>
+        <item>Cycle</item>
+    </string-array>
+</resources>

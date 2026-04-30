@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">FlowBerry</string>
+
+    <string name="settings_appearance_title">Appearance</string>
+    <string name="settings_theme_title">Theme</string>
+    <string name="settings_theme_summary">Choose the application theme</string>
+    <string name="settings_language_title">Language</string>
+    <string name="settings_language_summary">Choose the application language</string>
+
+    <string name="settings_cycle_display_title">Cycle phase display</string>
+    <string name="settings_show_pms_title">Show premenstrual syndrome days</string>
+    <string name="settings_show_luteal_title">Show the luteal phase</string>
+    <string name="settings_show_follicular_title">Show the follicular phase</string>
+    <string name="settings_show_ovulation_title">Show ovulation as an opportunity</string>
+    <string name="settings_show_fertility_warnings_title">Show fertility prevention warnings</string>
+    <string name="settings_rebuild_patterns_title">Rebuild predictions</string>
+    <string name="settings_rebuild_patterns_summary">Rebuilds trends from real cycles and symptoms</string>
+
+    <string name="settings_notifications_title">Important notifications</string>
+    <string name="settings_notifications_toggle_title">Receive notifications</string>
+    <string name="settings_notifications_toggle_summary">Notify the start of estimated periods and the start of fertility with an adapted prevention message.</string>
+    <string name="settings_notifications_permission_toast">Allow Android notifications to receive important reminders.</string>
+    <string name="settings_rebuild_predictions_done">Predictions rebuilt</string>
+
+    <string name="settings_sharing_title">Sharing</string>
+    <string name="backup_share_chooser_title">Export data</string>
+    <string name="backup_share_subject">FlowBerry backup</string>
+    <string name="backup_share_message">Backup exported from FlowBerry.</string>
+    <string name="backup_export_title">Export data</string>
+    <string name="backup_export_summary">Exports a shareable backup of your data.</string>
+    <string name="backup_export_success">Backup file prepared.</string>
+    <string name="backup_export_error">Unable to prepare the backup.</string>
+    <string name="backup_export_error_directory">Unable to create the backup directory.</string>
+    <string name="backup_export_error_encode">Unable to encode the backup.</string>
+    <string name="backup_import_title">Import data</string>
+    <string name="backup_import_summary">Imports a FlowBerry backup and replaces the current data.</string>
+    <string name="backup_import_error_generic">Unable to import this backup.</string>
+    <string name="backup_import_error_invalid">The selected file is not a valid FlowBerry backup.</string>
+    <string name="backup_import_error_open">Unable to open the backup file.</string>
+    <string name="backup_import_success">Backup imported.</string>
+    <string name="backup_import_success_details">%1$d cycles, %2$d symptoms, %3$d types imported.</string>
+
+    <string name="privacy_policy_title">Privacy policy</string>
+    <string name="privacy_policy_category">Privacy</string>
+    <string name="privacy_policy_summary">FlowBerry is designed to work locally on your device, without sending your personal data to a remote server by default.</string>
+    <string name="privacy_policy_open_summary">View the FlowBerry privacy policy.</string>
+    <string name="privacy_policy_body_1">1. Processed data\n\nFlowBerry lets you locally record menstrual cycle dates, symptoms, notes, and some display or notification preferences.</string>
+    <string name="privacy_policy_body_2">2. Data storage\n\nData is stored locally on the user device. By default, FlowBerry does not use a remote server to store personal data.</string>
+    <string name="privacy_policy_body_3">3. Data sharing\n\nFlowBerry does not sell, rent, or share personal or health data with third parties.</string>
+    <string name="privacy_policy_body_4">4. Export and import\n\nThe application may allow exporting or importing a backup file. This action is triggered only by the user.</string>
+    <string name="privacy_policy_body_5">5. Notifications\n\nIf notifications are enabled, FlowBerry may create local reminders on the device. No health data is sent to a remote service to generate those reminders.</string>
+    <string name="privacy_policy_body_6">6. Permissions\n\nFlowBerry may request permissions strictly necessary for its features, such as notifications or rescheduling reminders after reboot.</string>
+    <string name="privacy_policy_body_7">7. Security\n\nData remains on the device. Actual security also depends on protections enabled on the phone, such as passcode, biometrics, or encryption.</string>
+    <string name="privacy_policy_body_8">8. Intended use\n\nFlowBerry is a personal tracking tool. The application is not a medical device and does not replace advice from a healthcare professional.</string>
+    <string name="privacy_policy_body_9">9. Source code\n\nThe FlowBerry code may be made public as part of an open source approach. This does not include user personal data.</string>
+    <string name="privacy_policy_body_10">10. Data deletion\n\nThe user can delete data in the application or by uninstalling the application, subject to Android system backup mechanisms.</string>
+    <string name="privacy_policy_body_11">11. Contact\n\nFor any privacy related question, contact the application publisher at the address you will publish on the Play Store listing and in your online privacy policy.</string>
+</resources>
