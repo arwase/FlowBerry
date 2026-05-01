@@ -62,43 +62,6 @@ La politique de confidentialité web est disponible ici :
 - Material Components
 - MaterialCalendarView
 
-## Build
-
-### Debug
-
-```powershell
-.\gradlew.bat assembleDebug
-```
-
-### Bundle Play Store
-
-```powershell
-.\gradlew.bat bundleRelease
-```
-
-Le bundle de release est généralement généré ici :
-
-```text
-app\build\outputs\bundle\release\app-release.aab
-```
-
-## Publication web de la privacy policy
-
-Si tu veux publier la politique de confidentialité sur GitHub Pages :
-
-1. push le repo sur GitHub
-2. ouvre `Settings > Pages`
-3. choisis :
-   - `Deploy from a branch`
-   - branche `main`
-   - dossier `/docs`
-
-L’URL publique sera ensuite du type :
-
-```text
-https://TON-UTILISATEUR.github.io/TON-REPO/privacy-policy.html
-```
-
 ## Statut
 
 FlowBerry est un outil de suivi personnel.
